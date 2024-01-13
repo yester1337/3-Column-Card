@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: underline;
+}
+
+:root {
+    /*Primary*/
+
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+
+    /*Neutral*/
+
+    /*Paragraph*/
+    --Transparentwhite: hsla(0, 0%, 100%, 0.75);
+    /*BG/HEADINGS/BTNS*/
+    --Verylightgray: hsl(0, 0%, 95%);
+}
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.container {
+    width: 60%;
+    height: 63%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.column {
+    height: 100%;
+    flex: 1;
+    padding: 30px 40px;
+}
+
+.text-container {
+    font-family: Lexend Deca;
+    font-weight: 400;
+    color: var(--Transparentwhite);
+    line-height: 1.6;
+}
+
+.text-container h2 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-family: Big Shoulders Display;
+    color: var(--Verylightgray);
+    margin: 20px 0px;
+    letter-spacing: .3px;
+
+}
+
+.first {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: var(--Brightorange);
+}
+
+.second {
+    background-color: var(--Darkcyan);
+}
+
+.third {
+    background-color: var(--Verydarkcyan);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/*BUTTON-STYLING*/
+.btn {
+    margin-top: 70px;
+    padding: 12px 30px;
+    border-radius: 20px;
+    border-color: white;
+    border: 0px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.first .btn {
+    color: var(--Brightorange);
+}
+
+.second .btn {
+    color: var(--Darkcyan);
+}
+
+.third .btn {
+    color: var(--Verydarkcyan);
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--Transparentwhite);
+    border: 1px solid white;
+}
+
+#attribution {
+    margin-top: 10px;
+}
+@media only screen and (max-width: 1446px) {
+
+    .container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .column {
+        width: 80%;
+    }
+
+    .first {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .third {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+}
